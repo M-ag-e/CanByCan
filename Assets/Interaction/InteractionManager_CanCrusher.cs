@@ -10,6 +10,7 @@ public class InteractionManager_CanCrusher : MonoBehaviour
     public Transform startPos;
     public Transform endPos;
 
+    [HideInInspector]
     public float progress;
 
     private void Start()
@@ -36,7 +37,8 @@ public class InteractionManager_CanCrusher : MonoBehaviour
 
     }
     
-    private void OnGUI()
-    {
-    }
+    //private void OnGUI()
+    //{
+    //    Handles.Label(new Vector3(20, 20), $"{progress}");
+    //}
 }
